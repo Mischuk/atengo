@@ -1,0 +1,213 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Корзина
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_sub-nav
+    .wrapper
+      ul
+        li: a(href="#") Заявки (3)
+        li: a(href="#") Счета
+  main
+    - var breadcrumbs = ['Главная', 'Личный кабинет', 'Корзина']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Корзина
+    .m_bids      
+      .bids-list
+        .item(data-bids-status="hold")
+          .bid-lead
+            .name Заявка №155555
+            .docs
+              a(href="#"): span Список документов
+            .status
+              .hold 
+                .label Ожидает оплаты
+                .action
+                  a(href="#") Оплатить / Сформировать счет
+          .bid-details
+            ol
+              li
+                .title Заявление с подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить                  
+              li
+                .title Карточка организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+              li
+                .title Копия паспорта и СНИЛС руководителя, заверенные подписью руководителя и печатью организации. 
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о постановке на учет налогоплательщика в ФНС РФ, заверенная подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о государственной регистрации Юридического лица, заверенная подписью руководителя и печатью организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+        .item(data-bids-status="hold")
+          .bid-lead
+            .name Заявка №155555
+            .docs
+              a(href="#"): span Список документов
+            .status
+              .hold 
+                .label Ожидает оплаты
+                .action
+                  a(href="#") Оплатить / Сформировать счет
+          .bid-details
+            ol
+              li
+                .title Заявление с подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить                  
+              li
+                .title Карточка организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+              li
+                .title Копия паспорта и СНИЛС руководителя, заверенные подписью руководителя и печатью организации. 
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о постановке на учет налогоплательщика в ФНС РФ, заверенная подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о государственной регистрации Юридического лица, заверенная подписью руководителя и печатью организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+        .item(data-bids-status="hold")
+          .bid-lead
+            .name Заявка №155555
+            .docs
+              a(href="#"): span Список документов
+            .status
+              .hold 
+                .label Ожидает оплаты
+                .action
+                  a(href="#") Оплатить / Сформировать счет
+          .bid-details
+            ol
+              li
+                .title Заявление с подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить                  
+              li
+                .title Карточка организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+              li
+                .title Копия паспорта и СНИЛС руководителя, заверенные подписью руководителя и печатью организации. 
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о постановке на учет налогоплательщика в ФНС РФ, заверенная подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о государственной регистрации Юридического лица, заверенная подписью руководителя и печатью организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+        .item(data-bids-status="success")
+          .bid-lead
+            .name Заявка №155555
+            .docs
+              a(href="#"): span Список документов
+            .status              
+              .success Оплачено <span class="date">(15.06.2017)</span>
+          .bid-details
+            ol
+              li
+                .title Заявление с подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить                  
+              li
+                .title Карточка организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+              li
+                .title Копия паспорта и СНИЛС руководителя, заверенные подписью руководителя и печатью организации. 
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о постановке на учет налогоплательщика в ФНС РФ, заверенная подписью руководителя и печатью организации.
+                .attach-file
+                  form
+                    label
+                      input(type="file")
+                      .attach-button
+                        span Загрузить  
+              li
+                .title Копия Свидетельства о государственной регистрации Юридического лица, заверенная подписью руководителя и печатью организации.
+                .attach-file                  
+                  .attach-result 
+                    .filename Название документа.png
+                    .detach: a(href="#")
+
+  include ../modules/order/m_order.jade
+  

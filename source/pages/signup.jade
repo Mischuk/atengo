@@ -1,0 +1,64 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Регистрация
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_lead-hook
+    .wrapper
+      .form
+        .title.large КАБИНЕТ
+        form
+          .form-row
+            .personal-type
+              .type-label Выберите тип лица:
+              .radios
+                label
+                  input(type="radio" name="singup-type" value="1")
+                  i.icon
+                  i.label Физицическое лицо
+              .radios
+                label
+                  input(type="radio" name="singup-type" value="2")
+                  i.icon
+                  i.label Юридическое лицо
+          .form-row
+            label.input-label
+              input(type="text" placeholder="" required)
+              span ФИО<i class="required">*</i>
+          .form-row
+            label.input-label
+              input(type="email" placeholder="" required)
+              span Email<i class="required">*</i>
+          .form-row
+            label.input-label
+              input(type="text" placeholder="" required)
+              span Логин<i class="required">*</i>
+          .form-row
+            label.input-label
+              input(type="password" placeholder="" required)
+              span Пароль<i class="required">*</i>
+          .form-row
+            label.input-label
+              input(type="password" placeholder="" required)
+              span Повторите пароль<i class="required">*</i>
+          .form-row
+            button(class="btn form-submit" type="submit") Регистрация
+      .image
+        .title
+          img(src="images/lead-hook-title.png" alt="")
+        .shape-pen
+          img(src="images/lead-pen.png" alt="") 
+  .m_lead-articles-simple
+    .wrapper
+      .section-title
+        h2 ЭЛЕКТРОННАЯ <br>ЦИФРОВАЯ ПОДПИСЬ
+      article
+        p Селекция бренда программирует прагматический товарный кредит. Конечно, феномен толпы оправдывает побочный PR-эффект, даже с учетом публичного характера данных правоотношений. Из комментариев экспертов, анализирующих законопроект, не всегда можно определить, когда именно теологическая парадигма законодательно подтверждает договорный взаимозачет. Размещение масштабирует анализ рыночных цен. <b>Целевой трафик</b> противоречиво верифицирует процесс стратегического планирования. Типология средств массовой коммуникации транслирует кредитор.
+  include ../modules/order/m_order.jade
+  include ../modules/safetly/m_safetly.jade
+  
+  

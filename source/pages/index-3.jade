@@ -1,0 +1,69 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Главная
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_lead-hook
+    .wrapper
+      .form
+        .title.large ДЛЯ ЧЕГО?
+        form
+          .step-personal
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="reason" value="1")
+                  i.icon
+                  i.label: span РОССТАТ
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="reason" value="2")
+                  i.icon
+                  i.label: span ПФР
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="reason" value="3")
+                  i.icon
+                  i.label: span ФНС
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="reason" value="4")
+                  i.icon
+                  i.label: span ГОСУСЛУГИ
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="reason" value="5")
+                  i.icon
+                  i.label: span ДЛЯ ТОРГОВ
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="reason" value="6")
+                  i.icon
+                  i.label: span ТЕНДЕРЫ
+            .form-row
+              .add-to-cart
+                .total
+                  .label Всего:
+                  .value 1000 руб.
+                .submit-cart
+                  button(class="btn" type="submit") Заказать <i class="icon-cart"></i>
+                     
+      .image
+        .title
+          img(src="images/lead-hook-title.png" alt="")
+        .shape-pen
+          img(src="images/lead-pen.png" alt="") 
+  include ../modules/lead-articles/m_lead-articles.jade
+  include ../modules/order/m_order.jade
+  include ../modules/safetly/m_safetly.jade
+  
+  

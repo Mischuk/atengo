@@ -1,0 +1,31 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Техподдержка
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_sub-nav
+    .wrapper
+      ul
+        li: a(href="#") Мои сертификаты
+        li: a(class="current" href="#") Техподдержка
+        li: a(href="#") Мои сообщения (3)
+        li: a(href="#") Выйти
+  main
+    - var breadcrumbs = ['Главная', 'Личный кабинет', 'Мои сообщения']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Техподдержка
+    .m_bids.messages 
+      .no-bids У вас пока нет обращений в тех.поддержку.
+    .m_add-post
+      form 
+        .form-row
+          textarea(placeholder="Ваше сообщение")
+        .form-row
+          button(class="btn" type="submit") Написать запрос
+  include ../modules/order/m_order.jade
+  

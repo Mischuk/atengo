@@ -1,0 +1,37 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Вход
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_lead-hook
+    .wrapper
+      .form
+        .title.large КАБИНЕТ
+        form
+          .form-row
+            label.input-label
+              input(type="text" placeholder="" required)
+              span Логин<i class="required">*</i>
+          .form-row
+            label.input-label
+              input(type="password" placeholder="" required)
+              span Пароль<i class="required">*</i>
+          .form-row
+            .forgot-password
+              a(href="#") Забыли пароль?
+          .form-row
+            button(class="btn form-submit" type="submit") Войти
+      .image
+        .title
+          img(src="images/lead-hook-title.png" alt="")
+        .shape-pen
+          img(src="images/lead-pen.png" alt="") 
+  include ../modules/lead-articles/m_lead-articles.jade
+  include ../modules/order/m_order.jade
+  include ../modules/safetly/m_safetly.jade
+  
+  

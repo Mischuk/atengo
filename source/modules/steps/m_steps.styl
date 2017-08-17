@@ -1,0 +1,43 @@
+.m_steps
+  position relative 
+  .item
+    .title
+      font-size 24px
+      line-height 1
+      font-weight 600
+      text-transform uppercase
+      color $dark
+      margin-bottom 10px
+      span
+        color #7b5481
+        i
+          font-size 72px
+          font-style normal
+    .desc
+      color $dark
+      h3
+        font-size 20px
+        font-weight 600
+        color $dark
+        margin-bottom 15px
+        margin-top 30px
+      p:last-child
+        margin-bottom 0
+      ul
+        li
+          padding-left 40px
+          position relative 
+          margin-bottom 15px
+          &:after
+            content ''
+            background: url('../images/sprite.png') no-repeat -200px -50px;
+            width: 28px;
+            height: 17px;
+            position absolute
+            left 0
+            top 0
+      a
+        color #ac6484
+        text-decoration underline
+        &:hover
+          text-decoration none

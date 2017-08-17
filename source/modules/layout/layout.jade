@@ -7,15 +7,7 @@ html(lang="ru").no-js
     meta(http-equiv="x-ua-compatible" content="ie=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="msapplication-tap-highlight" content="no")
-    meta(name="description" content="A description of the page")
-    meta(name="subject" content="тематика вашего сайта")
-    meta(name="robots" content="index,follow,noodp")
-    meta(name="googlebot" content="index,follow")
-    meta(name="google" content="nositelinkssearchbox")
-    meta(name="google" content="notranslate")
-    meta(name="rating" content="General")
-    meta(name="format-detection" content="telephone=no")
-    meta(http-equiv='set-cookie' content='name=value; expires=date; path=url')
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,600,700|PT+Sans:700&amp;subset=cyrillic" rel="stylesheet")
     link(rel="stylesheet" href="css/plugins.css")
     link(rel="stylesheet" href="css/app.css")
     script(src="js/modernizr.js")
@@ -23,8 +15,9 @@ html(lang="ru").no-js
     block settings
     block data
     include ../header/m_header
-    .container
+    div(class=container_shapes?"container shapes":'container')
       block content
+      .container-shapes
     include ../footer/m_footer
     // Modals
     include ../modals/m_modals

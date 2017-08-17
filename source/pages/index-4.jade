@@ -1,0 +1,57 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Главная
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_lead-hook
+    .wrapper
+      .form.large
+        .title.large ЗАКАЗАТЬ
+        form
+          .step-personal
+            .form-row
+              label.input-label
+                input(type="text" placeholder="" required)
+                span Ваш логин<i class="required">*</i>
+            .form-row
+              label.input-label
+                input(type="password" placeholder="" required)
+                span Ваш пароль<i class="required">*</i>
+            .form-row
+              label.input-label
+                input(type="text" placeholder="" required)
+                span Ваше имя<i class="required">*</i>
+            .form-row
+              label.input-label
+                input(type="tel" placeholder="" required)
+                span Ваш номер телефона<i class="required">*</i>
+            .form-row
+              label.input-label
+                input(type="email" placeholder="" required)
+                span Ваш email<i class="required">*</i>
+            .form-row
+              .remark
+                p <i class="required">*</i> Звездочкой помечены поля, обязательные к заполнению
+                p Отправляя данную заявку, вы даете согласие на обработку персональ-ных данных. Они не будут переданы третьим лицам. Перечень документов на получение сертификата зависит от ряда условий. Наши консультанты подскажут вам, что именно необходимо подготовить и помогут с оформлением документов.
+            .form-row
+              .add-to-cart
+                .total
+                  .label Всего:
+                  .value 1000 руб.
+                .submit-cart
+                  button(class="btn" type="submit") Заказать <i class="icon-cart"></i>
+                     
+      .image
+        .title
+          img(src="images/lead-hook-title.png" alt="")
+        .shape-pen
+          img(src="images/lead-pen.png" alt="") 
+  include ../modules/lead-articles/m_lead-articles.jade
+  include ../modules/order/m_order.jade
+  include ../modules/safetly/m_safetly.jade
+  
+  

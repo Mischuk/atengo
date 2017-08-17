@@ -1,4 +1,4 @@
-# Atengo
+# Атенго
 
 ## Demo
 Demo: [frontend.watch/atengo](http://frontend.watch/atengo)

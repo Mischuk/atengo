@@ -1,0 +1,162 @@
+.m_lead-articles
+  position relative  
+  &:before
+    @media MD      
+      content ''
+      position absolute
+      right 0
+      top 0
+      width 50%
+      height 100%
+      background #f6f0f6
+      display block  
+  &:after
+    @media screen and (min-width: 1600px)
+      content ''
+      width 921px
+      height 1010px
+      position absolute
+      left 50%
+      margin-left -150px
+      top -116px
+      background url("../images/bg-articles-invert.png") no-repeat 0 0
+  .m_breadcrumbs
+    padding-top 0
+    margin-top 0
+  .wrap
+    clearfix()
+    max-width 1000px
+    margin-left auto
+    margin-right auto  
+    @media MD      
+      background #f6f0f6
+  .section-title
+    padding-left 45px
+    position relative 
+    margin-bottom 15px
+    @media SM
+      margin-bottom 30px
+    &:after
+      content ''
+      background: url('../images/sprite.png') no-repeat -150px 0;
+      width: 31px;
+      height: 27px;
+      position absolute
+      left 0
+      top 0
+    h2
+      opensans()
+      font-size 21px
+      line-height 1
+      color $dark
+      font-weight 600
+      @media SM
+        font-size 24px
+  .about,
+  .details
+    position relative 
+    padding 30px 0
+    color #4a454b
+    @media MD
+      float left
+      width 50%    
+  .about
+    @media MD
+      padding-right 115px
+      background #fff
+    &:after
+      @media MD
+        content ''
+        position absolute
+        right 0
+        top 0
+        width 22px
+        height 100%
+        background #f6f0f6
+    .wrapper
+      @media MD
+        max-width 500px
+    article
+      position relative 
+      @media MD
+        z-index 1
+      img
+        @media XS
+          float left
+          width auto
+        @media MD
+          margin-right 0
+  .details
+    background #f6f0f6
+    @media MD
+      position relative 
+      margin-left -22px
+      &:before
+        content ''
+        width 22px
+        height 100%
+        background #f6f0f6
+        position absolute
+        right -22px 
+        top 0
+      &:after
+        content ''
+        background url("../images/lead-article-shape.png") no-repeat 0 0
+        position absolute
+        left -113px
+        top 0
+        width 113px
+        height 789px
+    .m_breadcrumbs
+      display none
+      @media MD
+        display block
+    .wrapper
+      @media MD
+        max-width 500px
+      @media LG
+        z-index 10
+    .list
+      clearfix()      
+      .item
+        @media SM
+          width 32.5%
+          display inline-block
+          vertical-align top
+        @media MD
+          display block
+          width 100%
+        & + .item
+          padding-top 30px
+          @media SM
+            padding-top 0
+          @media MD
+            padding-top 30px            
+        .title
+          position relative 
+          padding-left 40px
+          margin-bottom 10px
+          &:after
+            content ''
+            background: url('../images/sprite.png') no-repeat -200px -50px;
+            width: 28px;
+            height: 17px;
+            position absolute
+            left 0
+            top 0
+          a
+            color $dark
+            text-decoration underline
+            font-weight 600
+            font-size 13px
+            text-transform uppercase
+            @media SM
+              font-size 14px
+            &:hover
+              text-decoration none
+        .desc
+          font-size 13px
+          line-height 22px
+          padding-left 40px
+          @media SM
+            font-size 14px

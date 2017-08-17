@@ -1,0 +1,40 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Счета
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_sub-nav
+    .wrapper
+      ul
+        li: a(href="#") Заявки (3)
+        li: a(class="current" href="#") Счета
+  main
+    - var breadcrumbs = ['Главная', 'Личный кабинет', 'Корзина', 'Счета']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Счета
+    .m_bids.bills 
+      .bids-list
+        .item
+          .bid-lead
+            .name Заявка №155555
+            .bill-date 15.06.2017
+            .type Электронная подпись
+            .status
+              .hold 
+                .label Ожидание
+         
+        .item
+          .bid-lead
+            .name Заявка №155555
+            .bill-date 15.06.2017
+            .type Электронная подпись
+            .status              
+              .success Оплачено
+          
+  include ../modules/order/m_order.jade
+  

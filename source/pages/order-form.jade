@@ -1,0 +1,185 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Формирование счета
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_sub-nav
+    .wrapper
+      ul
+        li: a(href="#") Заявки (3)
+        li: a(class="current" href="#") Счета
+  main
+    - var breadcrumbs = ['Главная', 'Личный кабинет', 'Корзина', 'Заявки', 'Формирование счета']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Формирование счета
+    .m_form-order
+      .form-title Счет - заявка №152599
+      form
+        .form-data
+          .row
+            .label Фамилия:
+            .value Иванов Иван Иванович
+          .row
+            .label Тип лица:
+            .value Юридическое лицо
+          .row
+            .label Тип:
+            .value ОСНО
+          .row
+            .label Товар:
+            .value Электронная подпись
+          .row
+            .label Цель:
+            .value РОССТАТ, ФНС
+          .row
+            .pay-variants
+              .label Выбор формы оплаты:
+              .value
+                .pay-variants-selected
+                .columns
+                  .column
+                    .item
+                      .header
+                        a(href="#"): span Безналичный расчет
+                      .body
+                        ul
+                          li: a(href="#"): img(src="images/pay/1.png", alt="")
+                          li: a(href="#"): img(src="images/pay/2.png", alt="")
+                          li: a(href="#"): img(src="images/pay/3.png", alt="")
+                          li: a(href="#"): img(src="images/pay/4.png", alt="")
+                          li: a(href="#"): img(src="images/pay/5.png", alt="")
+                          li: a(href="#"): img(src="images/pay/6.png", alt="")
+                          li: a(href="#"): img(src="images/pay/7.png", alt="")
+                          li: a(href="#"): img(src="images/pay/8.png", alt="")
+                          li: a(href="#"): img(src="images/pay/9.png", alt="")
+                          li: a(href="#"): img(src="images/pay/10.png", alt="")
+                          li: a(href="#"): img(src="images/pay/11.png", alt="")
+                          li: a(href="#"): img(src="images/pay/12.png", alt="")
+                          li: a(href="#"): img(src="images/pay/13.png", alt="")
+                    .item
+                      .header
+                        a(href="#"): span Банковской картой
+                      .body
+                        ul
+                          li: a(href="#"): img(src="images/pay/1.png", alt="")
+                          li: a(href="#"): img(src="images/pay/2.png", alt="")
+                          li: a(href="#"): img(src="images/pay/3.png", alt="")
+                          li: a(href="#"): img(src="images/pay/4.png", alt="")
+                          li: a(href="#"): img(src="images/pay/5.png", alt="")
+                          li: a(href="#"): img(src="images/pay/6.png", alt="")
+                          li: a(href="#"): img(src="images/pay/7.png", alt="")
+                          li: a(href="#"): img(src="images/pay/8.png", alt="")
+                          li: a(href="#"): img(src="images/pay/9.png", alt="")
+                          li: a(href="#"): img(src="images/pay/10.png", alt="")
+                          li: a(href="#"): img(src="images/pay/11.png", alt="")
+                          li: a(href="#"): img(src="images/pay/12.png", alt="")
+                          li: a(href="#"): img(src="images/pay/13.png", alt="")
+                    .item
+                      .header
+                        a(href="#"): span Сотовые операторы
+                      .body
+                        ul
+                          li: a(href="#"): img(src="images/pay/1.png", alt="")
+                          li: a(href="#"): img(src="images/pay/2.png", alt="")
+                          li: a(href="#"): img(src="images/pay/3.png", alt="")
+                          li: a(href="#"): img(src="images/pay/4.png", alt="")
+                          li: a(href="#"): img(src="images/pay/5.png", alt="")
+                          li: a(href="#"): img(src="images/pay/6.png", alt="")
+                          li: a(href="#"): img(src="images/pay/7.png", alt="")
+                          li: a(href="#"): img(src="images/pay/8.png", alt="")
+                          li: a(href="#"): img(src="images/pay/9.png", alt="")
+                          li: a(href="#"): img(src="images/pay/10.png", alt="")
+                          li: a(href="#"): img(src="images/pay/11.png", alt="")
+                          li: a(href="#"): img(src="images/pay/12.png", alt="")
+                          li: a(href="#"): img(src="images/pay/13.png", alt="")
+                    .item
+                      .header
+                        a(href="#"): span Электронные деньги
+                      .body
+                        ul
+                          li: a(href="#"): img(src="images/pay/1.png", alt="")
+                          li: a(href="#"): img(src="images/pay/2.png", alt="")
+                          li: a(href="#"): img(src="images/pay/3.png", alt="")
+                          li: a(href="#"): img(src="images/pay/4.png", alt="")
+                          li: a(href="#"): img(src="images/pay/5.png", alt="")
+                          li: a(href="#"): img(src="images/pay/6.png", alt="")
+                          li: a(href="#"): img(src="images/pay/7.png", alt="")
+                          li: a(href="#"): img(src="images/pay/8.png", alt="")
+                          li: a(href="#"): img(src="images/pay/9.png", alt="")
+                          li: a(href="#"): img(src="images/pay/10.png", alt="")
+                          li: a(href="#"): img(src="images/pay/11.png", alt="")
+                          li: a(href="#"): img(src="images/pay/12.png", alt="")
+                          li: a(href="#"): img(src="images/pay/13.png", alt="")
+                  .column                
+                    .item
+                      .header
+                        a(href="#"): span В терминале
+                      .body
+                        ul
+                          li: a(href="#"): img(src="images/pay/1.png", alt="")
+                          li: a(href="#"): img(src="images/pay/2.png", alt="")
+                          li: a(href="#"): img(src="images/pay/3.png", alt="")
+                          li: a(href="#"): img(src="images/pay/4.png", alt="")
+                          li: a(href="#"): img(src="images/pay/5.png", alt="")
+                          li: a(href="#"): img(src="images/pay/6.png", alt="")
+                          li: a(href="#"): img(src="images/pay/7.png", alt="")
+                          li: a(href="#"): img(src="images/pay/8.png", alt="")
+                          li: a(href="#"): img(src="images/pay/9.png", alt="")
+                          li: a(href="#"): img(src="images/pay/10.png", alt="")
+                          li: a(href="#"): img(src="images/pay/11.png", alt="")
+                          li: a(href="#"): img(src="images/pay/12.png", alt="")
+                          li: a(href="#"): img(src="images/pay/13.png", alt="")
+                    
+                    .item
+                      .header
+                        a(href="#"): span Через интернет-банк, если вы клиеент этого банка
+                      .body
+                        ul
+                          li: a(href="#"): img(src="images/pay/1.png", alt="")
+                          li: a(href="#"): img(src="images/pay/2.png", alt="")
+                          li: a(href="#"): img(src="images/pay/3.png", alt="")
+                          li: a(href="#"): img(src="images/pay/4.png", alt="")
+                          li: a(href="#"): img(src="images/pay/5.png", alt="")
+                          li: a(href="#"): img(src="images/pay/6.png", alt="")
+                          li: a(href="#"): img(src="images/pay/7.png", alt="")
+                          li: a(href="#"): img(src="images/pay/8.png", alt="")
+                          li: a(href="#"): img(src="images/pay/9.png", alt="")
+                          li: a(href="#"): img(src="images/pay/10.png", alt="")
+                          li: a(href="#"): img(src="images/pay/11.png", alt="")
+                          li: a(href="#"): img(src="images/pay/12.png", alt="")
+                          li: a(href="#"): img(src="images/pay/13.png", alt="")
+                    
+                    .item
+                      .header
+                        a(href="#"): span Другие способы
+                      .body
+                        ul
+                          li: a(href="#"): img(src="images/pay/1.png", alt="")
+                          li: a(href="#"): img(src="images/pay/2.png", alt="")
+                          li: a(href="#"): img(src="images/pay/3.png", alt="")
+                          li: a(href="#"): img(src="images/pay/4.png", alt="")
+                          li: a(href="#"): img(src="images/pay/5.png", alt="")
+                          li: a(href="#"): img(src="images/pay/6.png", alt="")
+                          li: a(href="#"): img(src="images/pay/7.png", alt="")
+                          li: a(href="#"): img(src="images/pay/8.png", alt="")
+                          li: a(href="#"): img(src="images/pay/9.png", alt="")
+                          li: a(href="#"): img(src="images/pay/10.png", alt="")
+                          li: a(href="#"): img(src="images/pay/11.png", alt="")
+                          li: a(href="#"): img(src="images/pay/12.png", alt="")
+                          li: a(href="#"): img(src="images/pay/13.png", alt="")
+        .form-submit
+          .row
+            .total
+              .date 15.06.2017
+              .cost ВСЕГО: 1 500 РУБ.
+            .action
+              button(class="btn print" type="submit") Распечатать
+              button(class="btn submit" type="submit") Оплатить
+                
+  include ../modules/order/m_order.jade
+  

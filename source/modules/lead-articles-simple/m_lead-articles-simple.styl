@@ -1,0 +1,26 @@
+.m_lead-articles-simple
+  padding 30px 0
+  .section-title
+    padding-left 45px
+    position relative 
+    margin-bottom 15px
+    @media SM
+      margin-bottom 30px
+    &:after
+      content ''
+      background: url('../images/sprite.png') no-repeat -150px 0;
+      width: 31px;
+      height: 27px;
+      position absolute
+      left 0
+      top 0
+    h2
+      opensans()
+      font-size 21px
+      line-height 1
+      color $dark
+      font-weight 600
+      @media SM
+        font-size 24px
+  p:last-child
+    margin-bottom 0

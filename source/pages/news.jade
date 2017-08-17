@@ -1,0 +1,27 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Новости
+
+block data
+  include ../static/content/_home.jade
+
+block settings
+  - var container_shapes = true
+
+block content
+  main
+    - var breadcrumbs = ['Главная', 'Новости']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Новости
+      include ../modules/pagination/m_pagination.jade
+    .m_news
+      - for (var x = 1; x < 9; x++)
+        .item
+          a(href="#")
+            .title АКЦИОНЕРНОЕ ОБЩЕСТВО
+            .desc Регрессное требование опротестовано. Указ транспонирует антропологический закон исключённого третьего. Отметим также, что Кодекс авалирован.      
+    include ../modules/pagination/m_pagination.jade
+  include ../modules/order/m_order.jade
+  

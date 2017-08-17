@@ -7,6 +7,43 @@ block data
   include ../static/content/_home.jade
 
 block content
-  h1 Hello, world!
-  section
-    lorem(size="2")
+  .m_lead-hook
+    .wrapper
+      .form
+        .title ВЫ?
+        form
+          .step-personal
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="personal" value="1")
+                  i.icon
+                  i.label: span юридическое лицо
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="personal" value="2")
+                  i.icon
+                  i.label: span Группа компаний
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="personal" value="3")
+                  i.icon
+                  i.label: span индивидуальный предприниматель
+            .form-row
+              .radios
+                label
+                  input(type="radio" name="personal" value="4")
+                  i.icon
+                  i.label: span физическое лицо
+      .image
+        .title
+          img(src="images/lead-hook-title.png" alt="")
+        .shape-pen
+          img(src="images/lead-pen.png" alt="") 
+  include ../modules/lead-articles/m_lead-articles.jade
+  include ../modules/order/m_order.jade
+  include ../modules/safetly/m_safetly.jade
+  
+  

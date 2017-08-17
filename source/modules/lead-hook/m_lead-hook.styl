@@ -1,0 +1,379 @@
+.m_lead-hook
+  position relative 
+  .wrapper
+    padding-left 0
+    padding-right 0
+  .form
+    position relative 
+    padding-left 15px
+    padding-right 15px
+    padding-bottom 15px
+    @media SM
+      float right
+      width 50%
+    @media MD
+      padding-top 85px
+      padding-left 115px
+      padding-right 30px
+      &.large
+        padding-top 30px
+    .title
+      condensed()
+      color $violet
+      font-size 60px
+      line-height 35px
+      text-align center
+      margin-bottom 20px
+      width 100%
+      text-align center
+      @media SM
+        line-height 1
+      @media MD
+        position absolute
+        left -255px
+        top 115px
+        transform rotate(-77deg)
+        font-size 113px
+        z-index 1
+        &.large
+          left -280px
+          top 225px
+    form
+      position relative 
+      z-index 1
+      .form-row + .form-row
+        margin-top 15px
+      .personal-type
+        margin-bottom 30px
+        .type-label
+          font-size 14px
+          font-weight 600
+          color $dark
+          margin-bottom 10px
+        .radios
+          margin-left 0
+          display block
+          .icon
+            width 18px
+            height 18px
+            border-radius 0
+            border 1px solid $violet
+          .label
+            font-size 14px
+          input:checked + .icon
+            background #ac6484
+            box-shadow inset 0 0 0 1px white
+      .step-personal
+        .select-count
+          // height 80px
+          border 1px solid $violet
+          border-radius 5px
+          position relative 
+          padding-left 70px
+          clearfix()
+          .select
+            width 100px
+            margin-bottom 10px
+            @media XS
+              float left
+              margin-top 13px
+              margin-bottom 13px
+          .select-label
+            line-height 1
+            font-size 14px
+            font-weight 600
+            text-transform uppercase
+            color $dark
+            padding-top 10px
+            padding-bottom 5px
+            @media XS
+              font-size 16px
+              float right
+              display table
+              padding-right 15px
+              padding-top 0
+              padding-bottom 0
+              height 70px
+            @media SM
+              font-size 18px
+            span
+              @media XS
+                display table-cell
+                vertical-align middle
+              br
+                display none
+                @media XS
+                  display block
+          .select-button
+            transition: .5s cubic-bezier(.25,.8,.25,1);
+            width 40px
+            height 40px
+            border-radius 50%
+            position absolute
+            left 15px
+            top 50%
+            margin-top -20px
+            display block
+            background $violet
+            border none
+            &:after
+              transition: .5s cubic-bezier(.25,.8,.25,1);
+              content ''
+              background: url('../images/sprite.png') no-repeat -200px 0;
+              width: 16px;
+              height: 15px;
+              position absolute
+              left 50%
+              top 50%
+              margin-left -8px
+              margin-top -7.5px
+            button
+              width 100%
+              height 100%
+              display block
+              border none
+              border none
+              border-radius 50%
+              opacity 0
+              position relative 
+              z-index 1
+        .radios
+          position relative 
+          width 100%
+          label
+            transition: .5s cubic-bezier(.25,.8,.25,1);
+            width 100%
+            border 1px solid $violet
+            border-radius 5px
+            height 60px
+            overflow hidden
+            input:checked + .icon
+              background $brown
+              &:before
+                opacity 1
+                transform scale(1) rotate(0)
+                transition-delay .1s
+              &:after
+                opacity 0
+                transform scale(0) rotate(45deg)
+                transition-delay 0
+            input:checked + .icon + .label
+              background $violet
+              color $brown
+            .icon
+              transition: .5s cubic-bezier(.25,.8,.25,1);
+              width 40px
+              height 40px
+              border-radius 50%
+              position absolute
+              left 15px
+              top 50%
+              margin-top -20px
+              display block
+              background $violet
+              border none
+              &:before
+                transition: .5s cubic-bezier(.25,.8,.25,1);
+                content ''
+                background: url('../images/sprite.png') no-repeat -250px 0
+                width: 16px;
+                height: 15px;
+                position absolute
+                left 50%
+                top 50%
+                margin-left -8px
+                margin-top -7.5px
+                z-index 1
+                opacity 0
+                transform scale(0) rotate(45deg)
+                transition-delay 0
+              &:after
+                transition: .5s cubic-bezier(.25,.8,.25,1);
+                content ''
+                background: url('../images/sprite.png') no-repeat -200px 0;
+                width: 16px;
+                height: 15px;
+                position absolute
+                left 50%
+                top 50%
+                margin-left -8px
+                margin-top -7.5px
+                z-index 1
+                transition-delay .1s
+            .label
+              transition: .5s cubic-bezier(.25,.8,.25,1);
+              padding-left 65px
+              padding-right 15px
+              font-size 18px
+              font-weight 600
+              color #4a454b
+              text-transform uppercase
+              line-height 1.2
+              display table
+              height 100%
+              width 100%
+              &:hover
+                background $violet + 90%
+              span
+                display table-cell
+                vertical-align middle
+      .forgot-password
+        text-align right
+        a
+          color $violet
+          text-decoration underline
+          &:hover
+            text-decoration none
+      .remark
+        font-size 12px
+        color #4a454b
+        p
+          margin-bottom 0
+          & + p
+            margin-top 15px
+          .required
+            color red
+      .add-to-cart
+        clearfix()
+        .total
+          color $dark
+          font-weight 600
+          text-align center
+          line-height 60px
+          @media XS
+            float left     
+            text-align left       
+          > div
+            display inline
+          .value
+            font-size 18px
+            font-weight 600
+      .submit-cart
+        @media XS
+          float right          
+        button
+          anim()
+          background $violet
+          position relative 
+          color #fff
+          box-shadow none
+          font-size 16px
+          opensasns()
+          font-weight 600
+          text-transform none
+          min-width 165px
+          display block
+          padding 13px 16px
+          border-radius 5px
+          margin-left auto
+          margin-right auto
+          &:after
+            display none
+          &:hover
+            background $violet - 15% 
+          .icon-cart
+            background: url('../images/sprite.png') no-repeat -250px -50px;
+            width: 31px;
+            height: 24px;
+            display inline-block
+            vertical-align middle
+      .form-submit
+        anim()
+        background $violet
+        position relative 
+        color #fff
+        box-shadow none
+        font-size 16px
+        opensasns()
+        font-weight 600
+        text-transform none
+        min-width 165px
+        display block
+        padding 13px 16px
+        border-radius 5px
+        margin-left auto
+        margin-right auto
+        &:after
+          display none
+        &:hover
+          background $violet - 15%          
+      .input-label
+        position relative 
+        display block
+        &.focus-in
+          input
+            border-radius  0 5px 5px 5px
+          input + span
+            background $violet
+            color #fff
+            line-height 20px
+            font-size 14px
+            transform translateY(-32px)
+            border-radius 5px 5px 0 0 
+            i
+              display none
+        input
+          width 100%
+          height 100%
+          border 1px solid $violet
+          border-radius 5px
+          font-size 16px
+          line-height 1
+          opensans()
+          padding 10px
+        span
+          anim()
+          position absolute
+          left 0
+          top 50%
+          height 20px
+          margin-top -10px
+          padding 0 10px
+          color #a094a3
+          font-size 16px
+          line-height 20px
+          cursor text
+          i.required
+            color red
+            font-style normal
+  .image
+    position relative 
+    background $violet
+    padding 30px 15px
+    text-align center
+    @media SM
+      float left
+      width 50%
+    @media MD
+      height 568px
+      position static
+      padding-right 50px
+      padding-top 85px
+      &:after
+        content ''
+        background url("../images/lead-hook-shape.png") no-repeat 0 0
+        width 135px
+        height 568px
+        position absolute
+        left 50%
+        top 0
+        margin-left -135px
+      &:before
+        content ''
+        width 100%
+        height 100%
+        top 0
+        left -100%
+        background $violet
+        position absolute
+    img
+      max-width 100%
+    .shape-pen
+      margin-top 30px
+      @media MD
+        margin-top 45px
+    .title,
+    .shape-pen
+      @media MD
+        position relative 
+        z-index 1

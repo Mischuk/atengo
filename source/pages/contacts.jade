@@ -1,0 +1,71 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Контакты
+
+block data
+  include ../static/content/_home.jade
+
+block settings
+  - var container_shapes = true
+
+block content  
+  main
+    - var breadcrumbs = ['Главная', 'Контакты']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Контакты
+    .m_contacts
+      .address
+        .title Адрес:
+        .value Россия, 127495, Москва, <br>Дмитровское шоссе, 163А, корпус 2, 16.4
+      .tels
+        .title Телефоны:
+        .value
+          .column
+            p: b Секретарь:
+            p +7 (800) 888–88–88, <br>факс: +7 (800) 888–88–88
+          .column
+            p: b Коммерческий отдел:
+            p +7 (800) 888–88–88, <br>факс: +7 (800) 888–88–88
+      .email
+        .title Электронная почта:
+        .value
+          a(href="#") info@atengo.ru
+          .action
+            a(class="btn" href="#") Написать нам
+  .map-wrapper
+    script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script.
+      ymaps.ready(function () {
+          var myMap = new ymaps.Map('map', {
+                  center: [55.911537, 37.542617],
+                  zoom: 16,
+                  controls: ['zoomControl']
+              },
+            ),
+
+             
+
+              myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                  hintContent: 'Собственный значок метки',
+                  balloonContent: 'Это красивая метка'
+              }, {
+                  // Опции.
+                  // Необходимо указать данный тип макета.
+                  iconLayout: 'default#image',
+                  // Своё изображение иконки метки.
+                  iconImageHref: 'images/map-marker.png',
+                  // Размеры метки.
+                  iconImageSize: [148, 81],
+                  // Смещение левого верхнего угла иконки относительно
+                  // её "ножки" (точки привязки).
+                  iconImageOffset: [-22, -81]
+              });
+
+             
+
+          myMap.geoObjects.add(myPlacemark);
+          myMap.behaviors.disable('scrollZoom');
+      });
+    #map

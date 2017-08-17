@@ -1,0 +1,80 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Техподдержка
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_sub-nav
+    .wrapper
+      ul
+        li: a(href="#") Мои сертификаты
+        li: a(class="current" href="#") Техподдержка
+        li: a(href="#") Мои сообщения (3)
+        li: a(href="#") Выйти
+  main
+    - var breadcrumbs = ['Главная', 'Личный кабинет', 'Мои сообщения']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Техподдержка
+      include ../modules/pagination/m_pagination.jade    
+    .m_bids.messages 
+      //- .no-bids У вас пока нет обращений в тех.поддержку.
+      .bids-list        
+        .item
+          .bid-lead
+            .name Не работает блок "новостей"
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .info 15.06.2017 / Админ
+            .message-body
+              p Ответ на запрос от администратора сайта, пример текста.
+        .item
+          .bid-lead
+            .name Не работает блок "новостей"
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .info 15.06.2017 / Админ
+            .message-body
+              p Ответ на запрос от администратора сайта, пример текста.
+        .item
+          .bid-lead
+            .name Не работает блок "новостей"
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .info 15.06.2017 / Админ
+            .message-body
+              p Ответ на запрос от администратора сайта, пример текста.
+        .item
+          .bid-lead
+            .name Не работает блок "новостей"
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .info 15.06.2017 / Админ
+            .message-body
+              p Ответ на запрос от администратора сайта, пример текста.
+    include ../modules/pagination/m_pagination.jade
+    .m_add-post
+      .page-title
+        h2 Написать запрос
+      form 
+        .form-row
+          textarea(placeholder="Ваше сообщение")
+        .form-row
+          button(class="btn" type="submit") Написать запрос
+  include ../modules/order/m_order.jade
+  

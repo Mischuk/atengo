@@ -4,5 +4,92 @@
   bottom 0
   width 100%
   padding 15px 0
-  text-align center
-  background #3b3a36
+  background $violet
+  color #fff
+  overflow hidden
+  @media SM
+    overflow visible
+    padding 40px 0
+  &:after
+    content ''
+    width 112px
+    height 110px
+    background url("../images/shape-footer.png") no-repeat 0 0
+    background-size contain
+    position absolute
+    right -10px
+    bottom -4px
+    @media SM
+      display none  
+  .footer-shape
+    @media LG
+      width 112px
+      height 110px
+      background url("../images/shape-footer.png") no-repeat left bottom
+      position absolute
+      right -10px
+      width 476px
+      height 533px      
+      right 0
+      bottom 5px
+  .contacts
+    position relative 
+    padding-left 40%
+    text-align right
+    margin-bottom 15px
+    line-height 1
+    @media SM
+      padding-left 0
+      float right
+      margin-bottom 0
+    .logo
+      position absolute
+      left 0
+      top 0
+      width 40%
+      text-align left
+      @media SM
+        position static
+        width auto
+        text-align right
+        margin-bottom 25px
+      img
+        max-width 100%
+    .email,
+    .tel
+      a
+        color #fff
+    .email
+      margin-top 5px
+      @media SM
+        margin-top 15px
+      a
+        text-decoration underline
+        &:hover
+          text-decoration none
+    .tel
+      span
+        display none
+        @media SM
+          display block
+          margin-bottom 5px
+      a
+        font-weight 700
+        font-size 17px
+  .info
+    @media SM      
+      float left
+      max-width 65%
+    .privaticy
+      margin-bottom 15px
+      padding-right 10px
+      @media XS
+        margin-top 25px
+      @media SM
+        margin-top 0
+        padding-bottom 1em
+    .copyright
+      @media SM
+        position absolute
+        left 15px
+        bottom 0px

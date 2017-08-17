@@ -1,0 +1,37 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Главная
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_lead-hook
+    .wrapper
+      .form
+        .title ТИП?
+        form
+          .step-personal
+            .form-row
+              .select-count
+                .select-button
+                  button(type="submit")
+                .select-label: span Количество <br>компаний                 
+                .select
+                  select(name="count")
+                    option(value="1" selected) 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5     
+      .image
+        .title
+          img(src="images/lead-hook-title.png" alt="")
+        .shape-pen
+          img(src="images/lead-pen.png" alt="") 
+  include ../modules/lead-articles/m_lead-articles.jade
+  include ../modules/order/m_order.jade
+  include ../modules/safetly/m_safetly.jade
+  
+  

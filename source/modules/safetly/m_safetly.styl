@@ -1,0 +1,152 @@
+.m_safetly
+  position relative  
+  overflow hidden
+  &:before
+    @media MD      
+      content ''
+      position absolute
+      left -132px
+      top 0
+      width 50%
+      height 100%
+      background #f6f0f6
+  &:after
+    @media screen and (min-width: 1600px)
+      content ''
+      width 921px
+      height 1010px
+      position absolute
+      right 50%
+      margin-right 25px
+      top -80px
+      background url("../images/bg-articles.png") no-repeat 0 0
+  .wrap
+    clearfix()
+    max-width 1000px
+    margin-left auto
+    margin-right auto  
+  .section-title
+    padding-left 45px
+    position relative 
+    margin-bottom 30px
+    @media SM
+      margin-bottom 30px
+    &:after
+      content ''
+      background: url('../images/sprite.png') no-repeat -150px 0;
+      width: 31px;
+      height: 27px;
+      position absolute
+      left 0
+      top 0
+    h2
+      opensans()
+      font-size 21px
+      line-height 1
+      color $dark
+      font-weight 600
+      @media SM
+        font-size 24px
+  .about,
+  .details
+    position relative 
+    padding 30px 0
+    color #4a454b
+    @media MD
+      float left
+      width 50%
+  .about
+    background #f6f0f6    
+    @media MD
+      position relative      
+      background none
+      &:before
+        content ''
+        background #f6f0f6
+        position absolute
+        right 132px
+        top 0
+        width 100%
+        height 100%
+      &:after
+        content ''
+        background url("../images/safetly-shape.png") no-repeat 0 0
+        position absolute
+        right 22px
+        top 0
+        width 110px
+        height 344px
+        z-index 1
+    .wrapper
+      @media MD
+        max-width 500px
+      @media LG
+        z-index 10
+    article
+      position relative 
+      @media MD
+        z-index 10
+        padding-right 102px
+      p
+        &:last-child
+          margin-bottom 0
+      img
+        width auto
+        float left
+        margin-right 15px
+        margin-bottom 0
+        @media XS
+          float left
+          width auto
+  .details
+    background #fff    
+    .wrapper
+      @media MD
+        max-width 500px      
+    .list
+      clearfix()      
+      .item
+        @media SM
+          width 49%
+          display inline-block
+          vertical-align top
+        & + .item
+          padding-top 30px
+          @media SM
+            padding-top 0
+        .title
+          position relative 
+          padding-left 20px
+          margin-bottom 10px
+          &:after
+            content ''
+            background: url('../images/sprite.png') no-repeat -150px -50px;
+            width: 14px;
+            height: 16px;
+            position absolute
+            left -5px
+            top 3px
+          a
+            color $dark
+            text-decoration underline
+            font-weight 600
+            font-size 13px
+            text-transform uppercase
+            @media SM
+              font-size 14px
+            &:hover
+              text-decoration none
+        .desc
+          font-size 13px
+          line-height 22px
+          padding-left 20px
+          @media SM
+            font-size 14px
+        .more
+          padding-left 20px
+          margin-top 5px
+          a
+            color $violet
+            text-decoration underline
+            &:hover
+              text-decoration none

@@ -1,0 +1,77 @@
+.m_contacts
+  position relative 
+  .address,
+  .tels,
+  .email
+    margin-bottom 30px
+    @media SM
+      display inline-block
+      vertical-align top
+      width 32%
+      padding-right 10px
+    .title
+      color $dark
+      font-weight 700
+      text-transform uppercase
+      @media SM        
+        margin-bottom 20px
+    .value
+      color $dark
+      p
+        margin-bottom 0
+  .tels
+    .column
+      @media XS
+        display inline-block
+        vertical-align top
+        width 49%
+      @media SM
+        width 100%  
+      @media MD
+        width 49%
+      & + .column
+        margin-top 15px
+        @media XS
+          margin-top 0
+        @media SM
+          margin-top 15px
+        @media MD
+          margin-top 0
+    p
+      b
+        font-style italic
+        font-weight 600
+  .email
+    .value > a
+      color #ac6484
+      text-decoration underline
+      &:hover
+        text-decoration none
+    .action
+      margin-top 5px
+      a
+        anim()
+        sn()
+        position relative 
+        box-shadow none
+        background #94b371
+        font-weight 600
+        color #fff
+        text-transform none
+        padding 5px 30px
+        &:after
+          display none
+        &:hover
+          background #ac6484
+  .tels
+    @media MD
+      width 42%
+  .email
+    @media MD
+      width 22%
+.map-wrapper
+  #map
+    height 200px
+    width 100%
+    @media SM
+      height 485px

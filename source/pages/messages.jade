@@ -1,0 +1,62 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Мои сообщения
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_sub-nav
+    .wrapper
+      ul
+        li: a(href="#") Мои сертификаты
+        li: a(href="#") Техподдержка
+        li: a(class="current" href="#") Мои сообщения (3)
+        li: a(href="#") Выйти
+  main
+    - var breadcrumbs = ['Главная', 'Личный кабинет', 'Мои сообщения']
+    include ../modules/breadcrumbs/m_breadcrumbs.jade
+    .page-title
+      h2 Мои сообщения
+      .counter Всего 3
+    .m_bids.messages 
+      .bids-list        
+        .item
+          .bid-lead
+            .name Ожидает оплаты
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .message-body Ваш заказ №152489 ожидает оплаты
+        .item
+          .bid-lead
+            .name Ожидает оплаты
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .message-body Ваш заказ №152489 ожидает оплаты
+        .item
+          .bid-lead
+            .name Ожидает оплаты
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .message-body Ваш заказ №152489 ожидает оплаты
+        .item
+          .bid-lead
+            .name Ожидает оплаты
+            .docs
+              a(href="#"): span Посмотреть сообщение
+            .status              
+              .success <span class="date">15.06.2017</span>
+          .bid-details
+            .message-body Ваш заказ №152489 ожидает оплаты
+  include ../modules/order/m_order.jade
+  

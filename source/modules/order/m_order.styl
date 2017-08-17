@@ -1,0 +1,116 @@
+.m_order
+  background $violet
+  position relative 
+  z-index 10
+  color #fff
+  text-align center
+  padding 30px 0
+  &:after
+    @media screen and (min-width: 1500px)
+      content ''
+      width 224px
+      height 80%
+      bottom 0
+      left 0
+      position absolute
+      background url("../images/bg-pattern.png") repeat 0 0
+  &:last-child
+    border-bottom 1px solid #fff
+    z-index 0
+  .section-title
+    h2
+      font-size 21px
+      opensans()
+      font-weight 600
+      padding-bottom 30px
+      margin-bottom 30px
+      border-bottom 1px solid #fff
+      display inline-block
+      vertical-align middle
+      text-transform uppercase
+    p
+      font-size 13px
+      line-height 22px
+      @media SM
+        font-size 14px
+  .list
+    @media SM
+      margin-top 30px
+    .item
+      width 49%
+      display inline-block
+      vertical-align top
+      @media SM
+        width 24%
+      &:nth-child(1),
+      &:nth-child(2)
+        margin-bottom 30px
+        @media SM
+          margin-bottom 0
+      &:nth-child(1)
+        .icon:after          
+          background: url('../images/sprite.png') no-repeat 0 -100px;
+          width: 58px;
+          height: 54px;          
+          margin-left -(@width/2)
+          margin-top -(@height/2)
+      &:nth-child(2)
+        .icon:after          
+          background: url('../images/sprite.png') no-repeat -100px -100px;
+          width: 70px;
+          height: 68px;          
+          margin-left -27px
+          margin-top -(@height/2)
+      &:nth-child(3)
+        .icon:after          
+          background: url('../images/sprite.png') no-repeat -200px -100px;
+          width: 79px;
+          height: 50px;          
+          margin-left -(@width/2)
+          margin-top -(@height/2)
+      &:nth-child(4)
+        .icon:after          
+          background: url('../images/sprite.png') no-repeat -300px -100px;
+          width: 62px;
+          height: 56px;          
+          margin-left -(@width/2)
+          margin-top -(@height/2)
+      &:hover
+        &:nth-child(1) .icon:after
+          background-position 0 -200px
+        &:nth-child(2) .icon:after
+          background-position -100px -200px
+        &:nth-child(3) .icon:after
+          background-position -200px -200px
+        &:nth-child(4) .icon:after
+          background-position -300px -200px
+      a
+        anim()
+        display block
+        border-radius 5px
+        padding 10px
+        &:hover
+          background $brown
+          .icon
+            background-image url("../images/shape-order-hover.png")
+          .title
+            color $violet
+      .icon
+        position relative 
+        width 106px
+        height 106px
+        background url("../images/shape-order.png") no-repeat 0 0
+        margin 0 auto
+        &:after
+          content ''
+          position absolute
+          left 50%
+          top 50%
+      .title
+        margin-top 15px
+        font-size 13px
+        line-height 22px
+        color #fff
+        text-decoration underline
+        @media SM
+          font-size 14px
