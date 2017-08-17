@@ -1,7 +1,7 @@
 # Атенго
 
 ## Demo
-Demo: [frontend.watch/atengo](http://frontend.watch/atengo)
+Demo: [frontend.watch/atengo](http://frontend.watch/atengo/templates.html)
 
 Download: [atengo-master.zip](https://github.com/Mischuk/atengo/archive/master.zip)
 
